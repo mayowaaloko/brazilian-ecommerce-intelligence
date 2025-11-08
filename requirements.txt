@@ -38,7 +38,7 @@ pydantic==2.5.3
 python-multipart==0.0.6
 
 # Data Access
-kagglehub==0.2.5
+kagglehub
 requests==2.31.0
 
 # Utilities
