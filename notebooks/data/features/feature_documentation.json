@@ -1,0 +1,97 @@
+{
+    "customer_features": {
+        "file": "data/features/customer_features.csv",
+        "rows": 93356,
+        "columns": 27,
+        "use_cases": [
+            "Churn prediction",
+            "CLV prediction",
+            "Customer segmentation"
+        ],
+        "key_features": [
+            "total_orders",
+            "total_spent",
+            "avg_order_value",
+            "recency_days",
+            "customer_tenure_days",
+            "purchase_frequency_rate",
+            "is_churned",
+            "RFM_numeric",
+            "segment",
+            "avg_review_given"
+        ]
+    },
+    "product_features": {
+        "file": "data/features/product_features.csv",
+        "rows": 32951,
+        "columns": 24,
+        "use_cases": [
+            "Product recommendations",
+            "Inventory optimization",
+            "Pricing strategy"
+        ],
+        "key_features": [
+            "total_sales",
+            "avg_price",
+            "avg_review",
+            "popularity_score",
+            "rating_quality_score",
+            "product_tier",
+            "price_vs_category_avg"
+        ]
+    },
+    "order_features": {
+        "file": "data/features/order_features_enhanced.csv",
+        "rows": 96476,
+        "columns": 69,
+        "use_cases": [
+            "Review score prediction",
+            "Delivery time prediction"
+        ],
+        "key_features": [
+            "delivery_time_days",
+            "is_late_delivery",
+            "freight_to_price_ratio",
+            "order_sequence",
+            "is_first_order",
+            "uses_installments",
+            "is_weekend",
+            "is_holiday_season"
+        ]
+    },
+    "timeseries_features": {
+        "file": "data/features/daily_timeseries_features_clean.csv",
+        "rows": 582,
+        "columns": 40,
+        "use_cases": [
+            "Revenue forecasting",
+            "Demand prediction"
+        ],
+        "key_features": [
+            "revenue_lag_7",
+            "revenue_rolling_mean_30",
+            "revenue_growth_7d",
+            "day_of_week",
+            "month",
+            "is_weekend",
+            "is_holiday_season"
+        ]
+    },
+    "seller_features": {
+        "file": "data/features/seller_features.csv",
+        "rows": 3095,
+        "columns": 15,
+        "use_cases": [
+            "Seller performance analysis",
+            "Seller recommendations"
+        ],
+        "key_features": [
+            "total_revenue",
+            "avg_review",
+            "unique_products",
+            "seller_tier",
+            "performance_score",
+            "review_consistency"
+        ]
+    }
+}
