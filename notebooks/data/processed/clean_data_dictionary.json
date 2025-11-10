@@ -1,0 +1,44 @@
+{
+    "order_level": {
+        "file": "master_order_clean.csv",
+        "rows": 99441,
+        "columns": 42,
+        "size_mb": 47.67170524597168,
+        "grain": "1 row = 1 order",
+        "use_cases": [
+            "Customer churn prediction",
+            "Revenue forecasting",
+            "Customer segmentation",
+            "Order-level analysis"
+        ],
+        "key_flags": [
+            "has_temporal_issue",
+            "is_delivery_outlier",
+            "is_extreme_delay",
+            "has_review",
+            "is_delivered",
+            "is_late_delivery",
+            "has_any_outlier"
+        ]
+    },
+    "item_level": {
+        "file": "master_item_clean.csv",
+        "rows": 112650,
+        "columns": 60,
+        "size_mb": 71.41140651702881,
+        "grain": "1 row = 1 item in an order",
+        "use_cases": [
+            "Product analysis",
+            "Seller performance",
+            "Product recommendations",
+            "Basket analysis",
+            "Geographic analysis"
+        ],
+        "key_flags": [
+            "is_price_outlier",
+            "is_freight_outlier",
+            "is_distance_outlier",
+            "has_any_outlier"
+        ]
+    }
+}

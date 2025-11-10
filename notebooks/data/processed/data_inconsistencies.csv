@@ -1,0 +1,4 @@
+Issue,Count,Severity
+Extreme delivery time,43,Medium
+Invalid coordinates,42,Medium
+Payment mismatch,255,Medium
