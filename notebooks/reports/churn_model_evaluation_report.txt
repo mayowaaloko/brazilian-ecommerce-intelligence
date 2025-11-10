@@ -1,0 +1,89 @@
+
+CUSTOMER CHURN PREDICTION - MODEL EVALUATION REPORT
+================================================================================
+
+PROJECT: Brazilian E-commerce Intelligence Platform
+MODEL: Logistic Regression
+DATE: 2025-11-09 22:11:25
+
+================================================================================
+1. MODEL PERFORMANCE SUMMARY
+================================================================================
+
+Best Model: Logistic Regression
+Training Samples: 1,010
+Test Samples: 253
+
+Metrics:
+  - Accuracy:  0.6680
+  - Precision: 0.6840
+  - Recall:    0.9349
+  - F1-Score:  0.7900
+  - AUC-ROC:   0.6212
+
+================================================================================
+2. COMPARISON WITH OTHER MODELS
+================================================================================
+
+              Model  Accuracy  Precision  Recall  F1-Score  AUC-ROC
+           Baseline    0.3320     0.0000  0.0000    0.0000   0.0000
+Logistic Regression    0.6680     0.6840  0.9349    0.7900   0.6212
+      Random Forest    0.6482     0.6923  0.8521    0.7639   0.5539
+            XGBoost    0.6443     0.7005  0.8166    0.7541   0.5701
+           LightGBM    0.6206     0.6891  0.7870    0.7348   0.5437
+    XGBoost (Tuned)    0.6759     0.6733  1.0000    0.8048   0.6059
+   LightGBM (Tuned)    0.6759     0.6835  0.9586    0.7980   0.6117
+
+================================================================================
+3. BUSINESS IMPACT
+================================================================================
+
+Confusion Matrix:
+  - True Negatives (Correct Active):  11
+  - False Positives (False Alarm):    73
+  - False Negatives (Missed Churn):   11
+  - True Positives (Caught Churn):    158
+
+Business Metrics:
+  - Total Customers: 253
+  - Churn Rate: 66.80%
+  - Customers We'll Intervene: 231
+  - Churned Customers Saved: 158
+  - Intervention Precision: 68.40%
+  - Churn Recall: 93.49%
+
+Cost-Benefit (Example):
+  - Total intervention cost: $2,310.00
+  - Revenue saved: $15,800.00
+  - Net benefit: $13,490.00
+  - ROI: 584.0%
+
+================================================================================
+4. TOP FEATURES DRIVING CHURN
+================================================================================
+
+            Feature  Importance
+    avg_order_value      0.8460
+        total_spent      0.6565
+            F_score      0.4988
+       total_orders      0.3036
+avg_items_per_order      0.2324
+ total_items_bought      0.2156
+      total_reviews      0.2153
+   avg_review_given      0.2138
+ late_delivery_rate      0.1914
+   avg_installments      0.1626
+
+================================================================================
+5. RECOMMENDATIONS
+================================================================================
+
+1. Deploy this model to identify at-risk customers in real-time
+2. Focus retention efforts on customers with high churn probability
+3. Monitor feature importance to understand churn drivers
+4. Retrain model quarterly with new data
+5. A/B test intervention strategies on predicted churners
+
+================================================================================
+END OF REPORT
+================================================================================
