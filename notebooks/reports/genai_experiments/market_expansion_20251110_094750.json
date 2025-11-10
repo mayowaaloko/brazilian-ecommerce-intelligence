@@ -1,0 +1,115 @@
+{
+  "experiment": "market_expansion_simulation",
+  "baseline_market": "Brazil",
+  "baseline_metrics": {
+    "total_customers": 75324,
+    "churn_rate": 0.9944108119590037,
+    "avg_clv": 164.35981148106845,
+    "repeat_purchase_rate": 0.02957888587966651,
+    "avg_delivery_days": 12,
+    "customer_satisfaction": 4.16
+  },
+  "simulated_markets": {
+    "USA": {
+      "market": "USA",
+      "projected_churn_rate": 0.6960875683713026,
+      "projected_clv_factor": 3.5,
+      "market_size_potential": "15-20M potential customers",
+      "adaptations_needed": [
+        "1-2 day delivery expectations (vs 12 days in Brazil)",
+        "Premium customer service standards",
+        "Omnichannel experience (online + physical)",
+        "Sustainability messaging for conscious consumers"
+      ],
+      "success_factors": [
+        "Logistics excellence - partner with FedEx/UPS",
+        "Competitive pricing vs Amazon/Walmart",
+        "Unique product selection (Brazilian imports?)"
+      ],
+      "risks": [
+        "Intense competition from established players",
+        "High customer acquisition costs ($50-100/customer)",
+        "Need for local fulfillment centers"
+      ]
+    },
+    "Nigeria": {
+      "market": "Nigeria",
+      "projected_churn_rate": 1.2927340555467048,
+      "projected_clv_factor": 0.4,
+      "market_size_potential": "5-8M potential customers",
+      "adaptations_needed": [
+        "Cash-on-delivery payment option (65% preference)",
+        "Mobile-first platform design (72% mobile users)",
+        "Local language support (English + Hausa/Yoruba/Igbo)",
+        "Flexible return policies to build trust"
+      ],
+      "success_factors": [
+        "Partner with local payment providers (Paystack, Flutterwave)",
+        "Build delivery network in Lagos/Abuja first",
+        "Focus on high-demand categories (phones, fashion)"
+      ],
+      "risks": [
+        "Payment fraud and trust issues",
+        "Last-mile delivery infrastructure gaps",
+        "Currency volatility (Naira)"
+      ]
+    },
+    "India": {
+      "market": "India",
+      "projected_churn_rate": 0.8949697307631034,
+      "projected_clv_factor": 0.5,
+      "market_size_potential": "100-150M potential customers",
+      "adaptations_needed": [
+        "Hyper-local pricing strategies (city-by-city)",
+        "Regional language support (Hindi, Tamil, Bengali, etc.)",
+        "Integration with UPI payment system",
+        "Festival-based promotional calendar (Diwali, etc.)"
+      ],
+      "success_factors": [
+        "Massive market size compensates for lower CLV",
+        "Strong mobile penetration (68%)",
+        "Growing middle class with disposable income"
+      ],
+      "risks": [
+        "Dominated by Flipkart/Amazon India",
+        "High return rates (20-30%)",
+        "Complex regulatory environment"
+      ]
+    }
+  },
+  "expansion_strategy": "\n📋 RECOMMENDED EXPANSION SEQUENCE:\n\nPHASE 1: INDIA (Months 1-6)\n✅ Why: Largest market potential (100-150M customers)\n✅ Relatively lower risks vs USA\n✅ Growing e-commerce ecosystem\nAction Plan:\n→ Launch in Bangalore/Mumbai (tech hubs)\n→ Partner with local logistics providers\n→ Integrate UPI payment system\n→ Budget: $2-3M for market entry\n\nPHASE 2: USA (Months 7-12)\n✅ Why: Highest CLV (3.5x Brazil)\n✅ Mature market with clear playbook\n✅ Can leverage premium positioning\nAction Plan:\n→ Start with niche Brazilian products\n→ Target Brazilian expat communities first\n→ Partner with existing fulfillment networks\n→ Budget: $5-8M for market entry\n\nPHASE 3: NIGERIA (Months 13-18)\n✅ Why: Underserved market with growth potential\n✅ Mobile-first opportunity (72% mobile)\n✅ Less competition than USA/India\nAction Plan:\n→ Focus on Lagos metropolitan area\n→ Build trust through cash-on-delivery\n→ Partner with Paystack/Flutterwave\n→ Budget: $1-2M for market entry\n\nEXPECTED 3-YEAR OUTCOMES:\n• India: 5-10M customers, $200-400M revenue\n• USA: 1-2M customers, $300-500M revenue\n• Nigeria: 500K-1M customers, $50-100M revenue\n• Combined: 6.5-13M new customers, $550M-1B revenue\n",
+  "comparison_table": [
+    {
+      "Market": "Brazil",
+      "Status": "Current",
+      "Churn Rate": "99.4%",
+      "CLV": "$164.36",
+      "Market Size": "75,324 actual",
+      "Priority": "N/A"
+    },
+    {
+      "Market": "USA",
+      "Status": "Projected",
+      "Churn Rate": "69.6%",
+      "CLV": "$575.26",
+      "Market Size": "15-20M potential customers",
+      "Priority": "TBD"
+    },
+    {
+      "Market": "Nigeria",
+      "Status": "Projected",
+      "Churn Rate": "129.3%",
+      "CLV": "$65.74",
+      "Market Size": "5-8M potential customers",
+      "Priority": "TBD"
+    },
+    {
+      "Market": "India",
+      "Status": "Projected",
+      "Churn Rate": "89.5%",
+      "CLV": "$82.18",
+      "Market Size": "100-150M potential customers",
+      "Priority": "TBD"
+    }
+  ]
+}

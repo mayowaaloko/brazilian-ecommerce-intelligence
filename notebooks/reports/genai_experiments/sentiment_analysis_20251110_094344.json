@@ -1,0 +1,15 @@
+{
+  "experiment": "review_sentiment_analysis",
+  "timestamp": "2025-11-10T09:43:44.708593",
+  "summary": {
+    "total_reviews": 100,
+    "positive_pct": 0.0,
+    "negative_pct": 0.0,
+    "neutral_pct": 100.0
+  },
+  "top_themes": {
+    "product_quality": 45,
+    "delivery": 21
+  },
+  "llm_recommendations": "[MOCK RESPONSE for prompt length 228]\nThis is a simulated LLM response. In production, this would call OpenAI/Claude API and return actual analysis."
+}

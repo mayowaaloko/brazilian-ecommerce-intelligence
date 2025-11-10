@@ -1,0 +1,123 @@
+{
+  "experiment": "natural_language_query",
+  "demo_queries": [
+    {
+      "query": "How many customers have churned?",
+      "result": {
+        "churned_customers": 74903,
+        "total_customers": 75324,
+        "churn_rate": "99.44%"
+      },
+      "explanation": "Found 74,903 churned customers out of 75,324 total (99.4% churn rate)"
+    },
+    {
+      "query": "What is the average customer lifetime value?",
+      "result": {
+        "average_clv": "$164.36",
+        "median_clv": "$107.22"
+      },
+      "explanation": "Average CLV is $164.36, median is $107.22"
+    },
+    {
+      "query": "Show me the top 10 customers by spending",
+      "result": [
+        {
+          "customer_unique_id": "0a0a92112bd4c708ca5fde585afaa872",
+          "total_spent": 13664.08,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "da122df9eeddfedc1dc1f5349a1a690c",
+          "total_spent": 7571.63,
+          "total_orders": 2
+        },
+        {
+          "customer_unique_id": "dc4802a71eae9be1dd28f5d788ceb526",
+          "total_spent": 6929.31,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "ff4159b92c40ebe40454e3e6a7c35ed6",
+          "total_spent": 6726.66,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "4007669dec559734d6f53e029e360987",
+          "total_spent": 6081.54,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "eebb5dda148d3893cdaf5b5ca3040ccb",
+          "total_spent": 4764.34,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "edf81e1f3070b9dac83ec83dacdbb9bc",
+          "total_spent": 4194.76,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "fa562ef24d41361e476e748681810e1e",
+          "total_spent": 4175.26,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "5e713be0853d8986528d7869a0811d2b",
+          "total_spent": 4042.74,
+          "total_orders": 1
+        },
+        {
+          "customer_unique_id": "011875f0176909c5cf0b14a9138bb691",
+          "total_spent": 4016.91,
+          "total_orders": 1
+        }
+      ],
+      "explanation": "Top 10 customers by spending shown below"
+    },
+    {
+      "query": "How many high-value customers are at risk?",
+      "result": {
+        "high_value_at_risk": 37437,
+        "total_value_at_risk": "$9,933,268.18"
+      },
+      "explanation": "Found 37,437 high-value customers at risk, representing $9,933,268.18 in value"
+    },
+    {
+      "query": "What is the customer segment breakdown?",
+      "result": {
+        "Lost": 30945,
+        "At Risk": 27692,
+        "Potential": 12296,
+        "Loyal": 4217,
+        "Champions": 174
+      },
+      "explanation": "Customer distribution across RFM segments"
+    }
+  ],
+  "complex_query": {
+    "question": "What percentage of customers who spent over $500 have churned?",
+    "result": {
+      "total_high_spenders": 3421,
+      "churned_high_spenders": 3399,
+      "churn_rate": "99.4%"
+    }
+  },
+  "use_cases": {
+    "Marketing": [
+      "Find customers likely to respond to discount campaigns",
+      "Identify segments with highest conversion potential"
+    ],
+    "Customer Service": [
+      "Show customers who left negative reviews this month",
+      "Find at-risk customers for proactive outreach"
+    ],
+    "Finance": [
+      "Calculate revenue by customer segment",
+      "Project next quarter revenue based on current trends"
+    ],
+    "Operations": [
+      "Identify products with longest delivery times",
+      "Show states with highest late delivery rates"
+    ]
+  }
+}
